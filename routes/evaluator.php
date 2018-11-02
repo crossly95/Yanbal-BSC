@@ -43,3 +43,7 @@ Route::get('/usuariosRrhh/{indicador}/{usuario}/diligenciar','EvaluatorControlle
 //Lleva a los resultados perritu
 Route::get('/usuariosRrhh/{usuario}/resultados','EvaluatorController@resultados')
     ->name('resultados');
+
+//Lleva a los resultados perritu
+Route::get('/usuariosRrhh/{usuario}/resultadosgraficas','EvaluatorController@resultadosgraficas')
+->name('resultadosgraficas');

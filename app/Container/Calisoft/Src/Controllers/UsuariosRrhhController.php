@@ -2,10 +2,8 @@
 
 namespace App\Container\Calisoft\Src\Controllers;
 use App\Container\Calisoft\Src\User;
-
-
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
 
 class UsuariosRrhhController extends Controller
@@ -17,7 +15,8 @@ class UsuariosRrhhController extends Controller
      */
     public function index()
     {
-        return User::all();
+        return DB::table('tbl_usuarios')->select('tbl_usuarios.*')->where('role', '=', 'funcionario' )->get();
+        
     }
 
     /**

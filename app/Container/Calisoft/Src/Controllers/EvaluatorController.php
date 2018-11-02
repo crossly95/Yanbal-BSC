@@ -70,6 +70,11 @@ class EvaluatorController extends Controller
         return view('calisoft.evaluator.evaluator-resultados',compact('usuario'));
     }
 
+    public function resultadosgraficas(User $usuario){
+
+        return view('calisoft.evaluator.evaluator-resultados-graficas',compact('usuario'));
+    }
+
 
     public function escenario(Proyecto $proyecto, CasoPrueba $casoPrueba)
     {

@@ -53,9 +53,12 @@
                             <button class="editar-modal btn btn-warning" title="Realizar Indicador" @click.prevent="openDeleteModal(user)">
                                 <!--<button class="editar-modal btn btn-danger" @click.prevent="destroy(user)">-->
                                     <span class="glyphicon glyphicon-pencil"></span>
-                                </button>
+                            </button>
                             <a class="agregar-preguntas btn btn-success" title="Plan de mejoramiento" :href="`/usuariosRrhh/${user.PK_id}/resultados`">
                                 <span class="glyphicon glyphicon-check"></span>
+                            </a>
+                            <a class="editar-modal btn btn-default" title="Ver grafica del indicador" :href="`/usuariosRrhh/${user.PK_id}/resultadosgraficas`">
+                                <span class="fa fa-bar-chart-o"></span>
                             </a>
                         </td>
                     </tr>
@@ -66,10 +69,7 @@
         <div class="row">
             <!-- Boton de crear usuario -->
             <div class="col-sm-6">
-                <button class="btn green-jungle center-block" @click="modal = true">
-                        <i class="fa fa-plus"></i>
-                        Crear Usuario
-                    </button>
+            
             </div>
             <!-- Pagination Buttons-->
             <div class="col-sm-6 text-right" v-show="paginator.lastPage > 1">
@@ -80,7 +80,7 @@
         
 
         <!--Inicio modal Eliminar usuarios-->
-        <modal v-model="deleteModal" title="Escoja Un Indicadores" :footer="false">
+        <modal v-model="deleteModal" title="Escoja un indicador a continuacion" :footer="false">
             <div class="table-responsive">
             <table class="table table-hover table-bordered table-condensed">
                 <thead>
