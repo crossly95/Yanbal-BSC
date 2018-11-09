@@ -45,3 +45,4 @@ Route::resource('usuariosRrhh', 'UsuariosRrhhController', [
 Route::resource('pruebas', 'PruebasController', [
     'only' => ['index', 'store', 'update', 'destroy','show'],
 ]);
+
