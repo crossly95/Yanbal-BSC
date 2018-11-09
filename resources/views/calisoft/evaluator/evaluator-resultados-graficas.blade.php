@@ -9,7 +9,7 @@
 
 
     <div id="app">
-            <div id="container" style="width: 75%;">
+            <div id="container" style="width: 100%;">
                     <canvas id="canvas"></canvas>
             </div>
     </div>
@@ -38,6 +38,8 @@
 	var label = [];
 	var dataFuncionario = [];
 	var dataIndicador = [];
+	var nombre = ' {{ $usuario->name }}';
+	var titulo = "INDICADORES vs FUNCIONARIO" + nombre.toUpperCase();
 
 		window.onload = function() {
 			var ctx = document.getElementById('canvas').getContext('2d');
@@ -121,7 +123,7 @@
 						},
 						title: {
 							display: true,
-							text: 'INDICADORES VS FUNCIONARIO'
+							text: titulo
 						}
 					}
 				});
