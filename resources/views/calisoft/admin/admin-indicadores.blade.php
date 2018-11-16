@@ -10,7 +10,7 @@
                     <label class="col-md-3 control-label">Nombre del indicador
                     </label>
                     <div class="col-md-9">
-                        <input type="text" placeholder="Nombre del indicador a crear" class="form-control" name="nombreIndicador" v-model="nuevoIndicador.nombre"> 
+                        <input type="text" placeholder="Nombre del indicador a crear" class="form-control" name="nombreIndicador" v-model="nuevoIndicador.nombre" required> 
                     </div>
                 </div>
                 <div class="form-group">
@@ -39,7 +39,7 @@
                 <div class="form-group">
                     <label class="col-md-3 control-label">Meta indicador</label>
                     <div class="col-md-9">
-                        <input type="text" placeholder="150" class="form-control" name="metaIndicador" v-model="nuevoIndicador.meta"> 
+                        <input type="number" placeholder="150" class="form-control" name="metaIndicador" v-model="nuevoIndicador.meta" required> 
                     </div>
                 </div>
                 <div class="form-group">
@@ -113,7 +113,7 @@
             <div class="form-group">
                 <label class="col-md-3 control-label">Pregunta</label>
                 <div class="col-md-9">
-                    <textarea class="form-control" rows="3" placeholder="Digitar pregunta para el indicador" v-model="nuevaPregunta.pregunta" ></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Digitar pregunta para el indicador" v-model="nuevaPregunta.pregunta" required ></textarea>
                 </div>
             </div>
             <div class="form-group">
@@ -124,11 +124,11 @@
                             <div  class="row">
                                 <div class="col-md-7">
                                     <label class="control-label">Nombre</label>
-                                    <input type="text" placeholder="Bueno, Malo, Regular, más de 10, etc." class="form-control" v-model="val.respuesta"> 
+                                    <input type="text" placeholder="Bueno, Malo, Regular, más de 10, etc." class="form-control" v-model="val.respuesta" required> 
                                 </div>
                                 <div class="col-md-3"> 
                                     <label class="control-label">Valor</label> 
-                                    <input type="text" placeholder="3" class="form-control" v-model="val.valor">  
+                                    <input type="text" placeholder="3" class="form-control" v-model="val.valor" required>  
                                 </div> 
                                 <div class="col-md-1">
                                     <label class="control-label">&nbsp;</label>

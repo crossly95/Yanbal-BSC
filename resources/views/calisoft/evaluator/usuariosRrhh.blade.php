@@ -95,7 +95,7 @@
                         <td v-text="indi.nombreIndicador"></td>
                         <td v-text="indi.tipo"></td>
                         <td v-text="indi.metaIndicador"></td>
-                        <td v-if=""> Por llenar </td>
+                        <td v-if=""> HABILITADO </td>
                         <td>
                             <a class="agregar-preguntas btn btn-list" title="Plan de mejoramiento" :href="`/usuariosRrhh/${indi.PK_id}/${idUser}/diligenciar`">
                                 <span class="glyphicon glyphicon-plus"></span>

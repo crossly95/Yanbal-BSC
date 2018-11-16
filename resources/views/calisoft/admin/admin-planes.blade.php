@@ -10,13 +10,13 @@
                     <label class="col-md-3 control-label">Umbral
                     </label>
                     <div class="col-md-9">
-                        <input type="text" placeholder="Umbral del plan a crear" class="form-control" name="umbral" v-model="nuevoPlan.umbral"> 
+                        <input type="text" placeholder="Umbral del plan a crear" class="form-control" name="umbral" v-model="nuevoPlan.umbral" required> 
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label">Recomendación</label>
                     <div class="col-md-9">
-                        <input type="text" placeholder="Recomendación del plan a crear" class="form-control" name="recomendacion" v-model="nuevoPlan.recomendacion"> 
+                        <input type="text" placeholder="Recomendación del plan a crear" class="form-control" name="recomendacion" v-model="nuevoPlan.recomendacion" required> 
                     </div>
                 </div>
                 <div class="form-group">

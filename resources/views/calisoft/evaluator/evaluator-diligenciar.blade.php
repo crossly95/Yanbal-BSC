@@ -13,7 +13,7 @@
                     <label class="col-md-9 control-label" v-text="'valores:'+ pregunta.respuesta">
                     </label>
                     <div class="col-md-12">
-                        <input type="text"  class="form-control" name="respuesta" v-model="pruebas[pregunta.PK_id]"> 
+                        <input type="text"  class="form-control" name="respuesta" v-model="pruebas[pregunta.PK_id]" required> 
                     </div>
                 </div>
             </div>
